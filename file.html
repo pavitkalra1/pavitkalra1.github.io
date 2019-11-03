@@ -16,8 +16,10 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 .test2 {
-  writing-mode: vertical-rl; 
+  writing-mode: vertical-lr; 
   cursor: pointer;
+  display:flex;
+  align-items: flex-end;
 }
 .button {
   display: inline-block;
@@ -88,6 +90,30 @@ body{
     z-index: 9999 !important;
     padding-top:20px;
   }
+  .animation
+  {
+  position: relative;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 3px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #691ef4, #fff, #691ef4);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
 
 
   </style>
@@ -125,28 +151,32 @@ body{
               </nav>
               <div class="hero-image">
                     <div class="hero-text">
-                      <h1 style="font-size:80px;color: antiquewhite;">I am Pavit Kalra</h1>
-                      <h3 style="font-size:40px; color:antiquewhite">And I code cool websites</h3>
+                      <h1  class="animation" style="font-size:80px;color: antiquewhite;">I am Pavit Kalra</h1>
+                      <h3  class="animation" style="font-size:40px; color:antiquewhite">And I code cool websites</h3>
                       <button class="button" onclick="window.location.href ='index.html';" style="vertical-align:middle"><span>Hire Me </span></button>
                     </div>
                     <br>
                     <br>
                     <br>
-                    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  
-                    <p class="test2" style="color:aqua;font-family: cursive;font-size: 20px;">Contact</p>
+                    <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br>  <br> <br> <br> <br> <br>
+                    <br> <br> 
                   
+                  
+                   
+                   <p class="test2" style="color:#fff;font-family: cursive;font-size: 20px;"><b>Contact Me</b></p>
 
                     <a href="https://www.instagram.com/pavitkalra/">
                     <img class="test2" src="download.jpg" height="42" width="42">
                     </a>
-                    <br>
+                    
                     <a href="https://www.facebook.com/pavit.kalra">
                     <img class="test2" src="download.png" height="42" width="42">
                     </a>
-                    <br>
+                    
                     <a href="https://github.com/pavitkalra1">
                     <img class="test2" src="git.png" height="42" width="42">
                     </a>
+                    
                   </div>
                   
 </body>
